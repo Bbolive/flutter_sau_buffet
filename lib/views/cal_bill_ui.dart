@@ -457,7 +457,21 @@ class _CallBillUiState extends State<CallBillUi> {
                     ),
                     Expanded(
                       child: ElevatedButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          //ทุกอย่างบนหน้าจอกลับไปเริ่มต้น
+                          setState(() {
+                            imgFile = null;
+                            isAdult = false;
+                            isChild = false;
+                            isWater = false;
+                            adultCtrl.clear();
+                            childCtrl.clear();
+                            cokeCtrl.clear();
+                            pureCtrl.clear();
+                            groupWater = 1;
+                            _selectedMember = 'ไม่เป็นสมาชิก';
+                          });
+                        },
                         icon: Icon(
                           Icons.cancel,
                           color: Colors.white,
