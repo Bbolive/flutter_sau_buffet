@@ -18,7 +18,7 @@ class _HomeUiState extends State<HomeUi> {
 
   //สรร้างตัวแปรเก็บ Ui ที่จะแสดง ซึ่งล้อกับ item ของ animated notch bottom bar ที่เลือก
   List<Widget> itemUIShow = [
-    CalBillUi(),
+    CallBillUi(),
     MenuUI(),
     AboutUi(),
   ];
